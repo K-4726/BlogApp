@@ -1,7 +1,7 @@
 {
   "name": "blogapp",
   "version": "1.0.0",
-  "description": "My blog app",
+  "description": "BlogApp jsons",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,13 +9,33 @@
   "author": "Kaustubh & Aditya",
   "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
+    "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
-    "dotenv": "^16.1.2",
+    "buffer": "^6.0.3",
+    "connect-mongo": "^5.0.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
+    "dns": "^0.2.2",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
     "md5": "^2.3.0",
-    "mongoose": "^7.2.2",
-    "mongoose-encryption": "^2.1.2"
+    "mongoose": "^7.3.1",
+    "net": "^1.0.2",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "stream": "^0.0.2",
+    "stream-http": "^3.2.0",
+    "timers": "^0.1.1",
+    "tls": "^0.0.1",
+    "url": "^0.11.1",
+    "y": "^0.3.2",
+    "zlib": "^1.0.5"
   }
 }
