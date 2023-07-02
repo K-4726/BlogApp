@@ -99,9 +99,16 @@ const userSchema = new mongoose.Schema({
 
 const User = new mongoose.model("User", userSchema);
 
+const blogPostSchema = new mongoose.Schema({
+  title: String,
+  content: String
+});
+
+const BlogPost = mongoose.model("BlogPost", blogPostSchema);
+
 // Routes
 
-app.post('/api/saveBlogPost', (req, res) => {
+app.post('/api/saveBlogPost', async (req, res) => {
   const { title, content } = req.body;
 
   // You can perform any necessary actions with the received data here, such as saving it to a database
@@ -111,8 +118,19 @@ app.post('/api/saveBlogPost', (req, res) => {
   console.log('Title:', title);
   console.log('Content:', content);
 
-  // Send a response back to the client
-  res.json({ message: 'Blog post saved successfully' });
+  const newBlogPost = new BlogPost({
+    title: title,
+    content: content
+  });
+
+  try {
+    await newBlogPost.save();
+    console.log('Blog post saved successfully');
+    res.json({ message: 'Blog post saved successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Failed to save blog post' });
+  }
 });
 
 app.get("/", function (req, res) {
