@@ -52,8 +52,7 @@ The Anonymous Blog offers the following features:
 ## Contributing:
 Contributions are welcome! If you'd like to contribute to the Anonymous Blog, please follow these steps:
 1. Fork the repository.
-2. Create a new branch.![1](https://github.com/K-4726/BlogApp/assets/76389646/a529c4db-0e71-4aad-979c-50cd90a816bb)
-
+2. Create a new branch.
 3. Commit your changes.
 4. Push to the branch.
 5. Submit a pull request.
