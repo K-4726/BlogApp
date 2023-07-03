@@ -41,7 +41,7 @@ The Anonymous Blog offers the following features:
 
 ## Demo Video
 
-
+Youtube Link: https://youtu.be/fSjwsxfJlVA
 
 ## Installation and Setup:
 1. Clone the repository: `git clone https://github.com/K-4726/BlogApp.git`
