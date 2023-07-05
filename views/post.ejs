@@ -1,8 +1,0 @@
-<%- include('./partials/header'); -%>
-<div class="maincontainer">
-	<h1><%=tit%></h1>
-	<%bloglist.forEach(function(posts){%> <%if(tit===posts.title){%>
-	<p><%=posts.content%></p>
-	<%}%> <%});%>
-</div>
-<%- include('./partials/footer'); -%>
